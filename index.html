@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Food</title>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo"></div>
+      </header>
+      <div class="main">
+        <h1>Organic food</h1>
+        <p>
+          <span class="bold"> Organic food</span> is grown without the use of
+          synthetic chemicals, such as human-made pesticides and fertilizers,
+          and does not contain genetically modified organisms (GMOs). Organic
+          foods include fresh produce, meats, and dairy products as well as
+          processed foods such as crackers, drinks, and frozen meals.
+        </p>
+
+        <p>
+          <span class="bold">The benefits of organic food</span>
+          How your food is grown or raised can have a major impact on your
+          mental and emotional health as well as the environment. Organic foods
+          often have more beneficial nutrients, such as antioxidants, than their
+          conventionally-grown counterparts and people with allergies to foods,
+          chemicals, or preservatives may find their symptoms lessen or go away
+          when they eat only organic foods.
+        </p>
+
+        <p>
+          <span class="bold">Organic produce contains fewer pesticides.</span>
+          Chemicals such as synthetic fungicides, herbicides, and insecticides
+          are widely used in conventional agriculture and residues remain on
+          (and in) the food we eat.
+        </p>
+
+        <p>
+          <span class="bold">Organic food is often fresher</span> because it
+          doesn’t contain preservatives that make it last longer. Organic
+          produce is sometimes (but not always, so watch where it is from)
+          produced on smaller farms nearer to where it is sold.
+        </p>
+
+        <p>
+          <span class="bold"
+            >Organic farming tends to be better for the environment.</span
+          >
+          Organic farming practices may reduce pollution, conserve water, reduce
+          soil erosion, increase soil fertility, and use less energy. Farming
+          without synthetic pesticides is also better for nearby birds and
+          animals as well as people who live close to farms.
+        </p>
+
+        <p>
+          <span class="bold"
+            >Organically raised animals are NOT given antibiotics, growth
+            hormones, or fed animal byproducts.</span
+          >
+          Feeding livestock animal byproducts increases the risk of mad cow
+          disease (BSE) and the use of antibiotics can create
+          antibiotic-resistant strains of bacteria. Organically-raised animals
+          tend to be given more space to move around and access to the outdoors,
+          which help to keep them healthy.
+        </p>
+
+        <p>
+          <span class="bold"
+            >Organic meat and milk can be richer in certain nutrients.</span
+          >
+          Results of a 2016 European study show that levels of certain
+          nutrients, including omega-3 fatty acids, were up to 50 percent higher
+          in organic meat and milk than in conventionally raised versions.
+        </p>
+
+        <p>
+          <span class="bold">Organic food is GMO-free.</span> Genetically
+          Modified Organisms (GMOs) or genetically engineered (GE) foods are
+          plants whose DNA has been altered in ways that cannot occur in nature
+          or in traditional crossbreeding, most commonly in order to be
+          resistant to pesticides or produce an insecticide.
+        </p>
+      </div>
+      <div class="main-img"></div>
+      <div class="bottom-img-section">
+        <h4>Send Mail to US</h4>
+        <div class="bottom-img"></div>
+      </div>
+      <div class="form-section">
+        <form action="">
+          <div
+            id="message-box"
+            style="width: 100%; height: 100%; display: none"
+          >
+            <h4 id="message-text"></h4>
+          </div>
+
+          <div class="row">
+            <label for="fullName"> Full Name:</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              onfocusout="validateFullName()"
+            />
+            <small class="validation-error"></small>
+          </div>
+
+          <div class="row">
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              onfocusout="validateEmail()"
+            />
+            <small class="validation-error"></small>
+          </div>
+          <div class="row">
+            <label for="phone" class="">Phone:</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              onfocusout="validatePhone()"
+            />
+            <small class="validation-error"></small>
+          </div>
+
+          <div class="row">
+            <button type="submit" id="send-form" class="">Submit &rarr;</button>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <p class="">
+          <small>© 2020. All Rights Reserved.</small>
+        </p>
+      </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

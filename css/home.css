@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #abb2b8;
+}
+
+.container {
+  display: grid;
+  height: 180vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.8fr 1.3fr 0.6fr;
+  grid-template-areas:
+    'header header header header header'
+    'main main main main-img main-img'
+    'bottom-img-section bottom-img-section form-section form-section form-section'
+    'footer footer footer footer footer';
+}
+
+h1,
+h4,
+footer {
+  text-align: center;
+}
+
+h1 {
+  color: black;
+}
+
+.validation-error {
+  color: #f2cc0f;
+}
+.bold {
+  font-weight: 800;
+}
+
+small {
+  font-size: 0.7rem;
+}
+
+header {
+  grid-area: header;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.logo {
+  width: 6%;
+  height: 8vh;
+
+  background-image: url('./../imgs/logo.jpeg');
+  background-size: cover;
+  margin-left: 1%;
+}
+
+.main {
+  grid-area: main;
+  color: white;
+  padding: var(--main-padding);
+}
+
+.main-img {
+  grid-area: main-img;
+  border-radius: var(--main-radius);
+  background: url('./../imgs/food-wood-tomatoes.jpg');
+  background-size: cover;
+  margin: 15% 5%;
+}
+
+.bottom-img-section {
+  grid-area: bottom-img-section;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.bottom-img {
+  width: 85%;
+  height: 85%;
+  min-height: 25vh;
+  border-radius: var(--main-radius);
+  background: url('./../imgs/cherries.jpeg');
+  background-size: cover;
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+.form-section {
+  grid-area: form-section;
+  background-color: #fff;
+}
+
+form {
+  margin: 7% 5% 5% 5%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+form > div {
+  margin: 7px 0;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  width: 15%;
+}
+
+input {
+  width: 82%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+button {
+  background-color: #6c757d;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+}
+
+button:hover {
+  color: #6c757d;
+  background-color: #abb2b8;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #6c757d;
+  padding-top: var(--main-padding);
+}
+
+@media (max-width: 767px) {
+  .container {
+    display: grid;
+    height: 380vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2fr 2fr 2fr 2fr 0.5fr;
+    grid-template-areas:
+      'header'
+      'main-img'
+      'main'
+      'bottom-img-section'
+      'form-section'
+      'footer';
+  }
+
+  label,
+  input {
+    width: 100%;
+  }
+
+  .main-img {
+    margin: 3%;
+    min-height: 50vh;
+  }
+
+  .logo {
+    width: 15%;
+    height: 18vh;
+
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 25%;
+    height: 10vh;
+
+    margin: 0 auto;
+  }
+}
